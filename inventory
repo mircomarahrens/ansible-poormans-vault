@@ -1,2 +1,2 @@
-[cologne]
+[localhost]
 nippes ansible_user=root ansible_password="{{ lookup('ini', 'password section={{ inventory_hostname }} file=passwords.ini') }}"

@@ -1,0 +1,15 @@
+---
+- name: ansible poormans vault
+  hosts: localhost
+  gather_facts: false
+  tasks:
+
+    - name: Print the password
+      debug:
+        msg: The password for the host {{ inventory_hostname }} is {{ ansible_password }}.
+
+    - name: Print the password, disallow logs
+      no_log: true
+      debug:
+        msg: The password for the host {{ inventory_hostname }} is {{ ansible_password }}.
+...
