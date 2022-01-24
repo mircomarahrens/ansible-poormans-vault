@@ -1,3 +1,5 @@
+Remark: For demonstration only! Do not push passwords to git repos!
+
 # ansible-poormans-vault
 
 Check lookup is working:
